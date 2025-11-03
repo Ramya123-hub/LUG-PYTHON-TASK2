@@ -1,0 +1,51 @@
+Conversion Categories: You must implement at least three of the following categories:
+1. Temperature (Celsius to Fahrenheit)
+2. Length (Kilometers to Miles)
+3. Weight (Kilograms to Pounds)
+4. Data Storage (Megabytes to Gigabytes)
+PROGRAM:
+
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def km_to_miles(km):
+    return km * 0.621371
+
+def kg_to_pounds(kg):
+    return kg * 2.20462
+
+def mb_to_gb(mb):
+    return mb / 1024
+
+print("Unit Conversion Menu")
+print("1. Celsius to Fahrenheit")
+print("2. Kilometers to Miles")
+print("3. Kilograms to Pounds")
+print("4. Megabytes to Gigabytes")
+
+choice = int(input("Enter your choice (1-4): "))
+
+if choice == 1:
+    c = float(input("Enter temperature in Celsius: "))
+    print("Fahrenheit:", celsius_to_fahrenheit(c))
+elif choice == 2:
+    km = float(input("Enter distance in Kilometers: "))
+    print("Miles:", km_to_miles(km))
+elif choice == 3:
+    kg = float(input("Enter weight in Kilograms: "))
+    print("Pounds:", kg_to_pounds(kg))
+elif choice == 4:
+    mb = float(input("Enter size in Megabytes: "))
+    print("Gigabytes:", mb_to_gb(mb))
+else:
+    print("Invalid Choice!")
+OUTPUT:
+Unit Conversion Menu
+1. Celsius to Fahrenheit
+2. Kilometers to Miles
+3. Kilograms to Pounds
+4. Megabytes to Gigabytes
+Enter your choice: 1
+Enter temperature in Celsius: 37
+Fahrenheit: 98.6
